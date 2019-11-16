@@ -39,7 +39,8 @@ class SecondFragment : Fragment(){
                 cal.set(Calendar.MINUTE, minute)
                 textViewTime.text = SimpleDateFormat("HH:mm").format(cal.time)
             }
-            TimePickerDialog(context, timeSetListener, cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), true).show()
+            TimePickerDialog(context, timeSetListener, cal.get(Calendar.HOUR_OF_DAY),
+                cal.get(Calendar.MINUTE), true).show()
         }
         return root
     }
